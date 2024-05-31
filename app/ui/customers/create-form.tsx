@@ -57,13 +57,13 @@ export default function Form() {
                 type="email"                
                 placeholder="Client email"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                aria-describedby="clientemail-error"
+                aria-describedby="email-error"
               />
             </div>
           </div>
-          <div id="clientemail-error" aria-live="polite" aria-atomic="true">
-            {state.errors?.clientemail &&
-              state.errors.clientemail.map((error: string) => (
+          <div id="email-error" aria-live="polite" aria-atomic="true">
+            {state.errors?.email &&
+              state.errors.email.map((error: string) => (
                 <p className="mt-2 text-sm text-red-500" key={error}>
                   {error}
                 </p>
